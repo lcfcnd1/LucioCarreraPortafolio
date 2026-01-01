@@ -37,6 +37,17 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      
+      {/* Made with love */}
+      <div className="mt-8 pt-6 border-t border-border/30 text-center">
+        <p className="text-muted-foreground text-xs font-mono">
+          Made with <span className="text-red-500">♥</span> with{" "}
+          <span className="text-foreground">React</span> •{" "}
+          <span className="text-foreground">TypeScript</span> •{" "}
+          <span className="text-foreground">Tailwind CSS</span> •{" "}
+          <span className="text-foreground">Vite</span>
+        </p>
+      </div>
     </footer>
   );
 };
