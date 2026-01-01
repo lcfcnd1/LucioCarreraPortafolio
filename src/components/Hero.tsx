@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [glowingCell, setGlowingCell] = useState<number | null>(null);
-  const totalCells = 200;
+  
+  // Calculate grid based on screen size
+  const cols = 30;
+  const rows = 15;
+  const totalCells = cols * rows;
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -11,7 +15,7 @@ const Hero = () => {
     }, 1200);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [totalCells]);
 
   return (
     <section 
@@ -20,19 +24,16 @@ const Hero = () => {
     >
       {/* Background grid with glowing cells */}
       <div 
-        className="absolute inset-0"
+        className="absolute inset-0 grid"
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, 60px)',
-          gridTemplateRows: 'repeat(auto-fill, 60px)',
-          justifyContent: 'center',
-          alignContent: 'center',
+          gridTemplateColumns: `repeat(${cols}, 1fr)`,
+          gridTemplateRows: `repeat(${rows}, 1fr)`,
         }}
       >
         {Array.from({ length: totalCells }).map((_, index) => (
           <div
             key={index}
-            className={`w-[60px] h-[60px] border border-foreground/[0.04] transition-all duration-700 ${
+            className={`border border-foreground/[0.04] transition-all duration-700 ${
               glowingCell === index 
                 ? 'bg-primary/25 shadow-[0_0_20px_hsl(var(--primary)/0.5)]' 
                 : 'bg-transparent'
