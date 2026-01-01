@@ -80,6 +80,7 @@ const Hero = () => {
       <a 
         href="#about"
         className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-fade-in animation-delay-600"
+        aria-label="Ir a la sección Sobre mí"
       >
         <ChevronDown className="w-8 h-8 animate-bounce" />
       </a>
