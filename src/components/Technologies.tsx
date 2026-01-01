@@ -13,8 +13,8 @@ const Technologies = () => {
       items: ["Docker", "AWS", "Git", "CI/CD", "Vercel"],
     },
     {
-      title: "Otras",
-      items: ["Figma", "REST APIs", "Testing", "Agile", "Linux"],
+      title: "IA",
+      items: ["OpenAI", "TensorFlow", "PyTorch", "LangChain", "Hugging Face"],
     },
   ];
 
