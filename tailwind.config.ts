@@ -1,7 +1,10 @@
 import type { Config } from "tailwindcss";
 
+const safelistGridCols = Array.from({ length: 16 }, (_, i) => `grid-cols-${i + 1}`);
+
 export default {
   darkMode: ["class"],
+  safelist: [...safelistGridCols, 'lg:grid-cols-16'],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
