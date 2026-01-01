@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+
 
 const Projects = () => {
   const projects = [
@@ -50,16 +50,6 @@ const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
-                
-                {/* Overlay buttons */}
-                <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button className="w-9 h-9 rounded-lg bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:text-primary transition-colors">
-                    <Github className="w-4 h-4" />
-                  </button>
-                  <button className="w-9 h-9 rounded-lg bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:text-primary transition-colors">
-                    <ExternalLink className="w-4 h-4" />
-                  </button>
-                </div>
               </div>
               
               {/* Content */}
