@@ -20,6 +20,24 @@ const Projects = () => {
       tags: ["React Native", "Firebase", "Redux", "Node.js"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     },
+    {
+      title: "Sistema de Reservas",
+      description: "Plataforma de reservas online para restaurantes con calendario interactivo y notificaciones en tiempo real.",
+      tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+    },
+    {
+      title: "Fintech App",
+      description: "Aplicación financiera con seguimiento de gastos, presupuestos inteligentes y análisis de inversiones.",
+      tags: ["React", "GraphQL", "Python", "TensorFlow"],
+      image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80",
+    },
+    {
+      title: "Social Media Dashboard",
+      description: "Panel de control para gestión de redes sociales con programación de posts y métricas unificadas.",
+      tags: ["Angular", "NestJS", "Redis", "Docker"],
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+    },
   ];
 
   return (
