@@ -36,7 +36,7 @@ const Projects = () => {
       title: "Social Media Dashboard",
       description: "Panel de control para gestión de redes sociales con programación de posts y métricas unificadas.",
       tags: ["Angular", "NestJS", "Redis", "Docker"],
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80",
     },
   ];
 
