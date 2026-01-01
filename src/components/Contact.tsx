@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/lib/supabase";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -13,16 +14,41 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarme. Te responderé pronto.",
-    });
-    
-    setIsSubmitting(false);
-    (e.target as HTMLFormElement).reset();
+    // Obtener los datos del formulario
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
+    };
+
+    try {
+      // Insertar el mensaje en Supabase
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([data]);
+
+      if (error) throw error;
+
+      // Mostrar mensaje de éxito
+      toast({
+        title: "✅ Mensaje enviado",
+        description: "Gracias por contactarme. Te responderé pronto.",
+      });
+      
+      // Limpiar el formulario
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error al enviar mensaje:', error);
+      toast({
+        title: "❌ Error",
+        description: "Hubo un problema al enviar tu mensaje. Por favor, intenta de nuevo.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
