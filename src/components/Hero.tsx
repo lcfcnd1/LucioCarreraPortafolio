@@ -2,26 +2,16 @@ import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [glowingCells, setGlowingCells] = useState<number[]>([]);
+  const [glowingCell, setGlowingCell] = useState<number | null>(null);
+  const totalCells = 200;
   
   useEffect(() => {
-    const totalCells = 80; // Approximate number of visible cells
-    
     const interval = setInterval(() => {
-      // Randomly select 2-4 cells to glow
-      const numCells = Math.floor(Math.random() * 3) + 2;
-      const newGlowing: number[] = [];
-      for (let i = 0; i < numCells; i++) {
-        newGlowing.push(Math.floor(Math.random() * totalCells));
-      }
-      setGlowingCells(newGlowing);
-    }, 1500);
+      setGlowingCell(Math.floor(Math.random() * totalCells));
+    }, 1200);
 
     return () => clearInterval(interval);
   }, []);
-
-  // Generate grid cells
-  const gridCells = Array.from({ length: 80 }, (_, i) => i);
 
   return (
     <section 
@@ -29,16 +19,24 @@ const Hero = () => {
       style={{ background: 'var(--gradient-hero)' }}
     >
       {/* Background grid with glowing cells */}
-      <div className="absolute inset-0 grid grid-cols-8 md:grid-cols-10 lg:grid-cols-16 gap-0">
-        {gridCells.map((index) => (
+      <div 
+        className="absolute inset-0"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, 60px)',
+          gridTemplateRows: 'repeat(auto-fill, 60px)',
+          justifyContent: 'center',
+          alignContent: 'center',
+        }}
+      >
+        {Array.from({ length: totalCells }).map((_, index) => (
           <div
             key={index}
-            className={`border border-foreground/[0.03] transition-all duration-1000 ${
-              glowingCells.includes(index) 
-                ? 'bg-primary/20 shadow-[0_0_15px_hsl(var(--primary)/0.4)]' 
+            className={`w-[60px] h-[60px] border border-foreground/[0.04] transition-all duration-700 ${
+              glowingCell === index 
+                ? 'bg-primary/25 shadow-[0_0_20px_hsl(var(--primary)/0.5)]' 
                 : 'bg-transparent'
             }`}
-            style={{ aspectRatio: '1' }}
           />
         ))}
       </div>
