@@ -94,6 +94,32 @@
     51%, 100% { opacity: 0; }
   }
 
+  @keyframes grid-move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 60px 60px;
+    }
+  }
+
+  @keyframes grid-move-reverse {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -120px -120px;
+    }
+  }
+
+  .animate-grid-move {
+    animation: grid-move 20s linear infinite;
+  }
+
+  .animate-grid-move-reverse {
+    animation: grid-move-reverse 30s linear infinite;
+  }
+
   @keyframes fade-up {
     from {
       opacity: 0;

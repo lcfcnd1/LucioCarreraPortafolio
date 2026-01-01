@@ -6,13 +6,23 @@ const Hero = () => {
       className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-6"
       style={{ background: 'var(--gradient-hero)' }}
     >
-      {/* Background grid pattern */}
+      {/* Background grid pattern with animation */}
       <div 
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.05] animate-grid-move"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
                            linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
           backgroundSize: '60px 60px'
+        }}
+      />
+      
+      {/* Secondary grid for depth effect */}
+      <div 
+        className="absolute inset-0 opacity-[0.02] animate-grid-move-reverse"
+        style={{
+          backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
+                           linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
+          backgroundSize: '120px 120px'
         }}
       />
       
@@ -35,9 +45,9 @@ const Hero = () => {
             <span className="text-primary">$</span> whoami
           </div>
           
-          <h1 className="font-mono text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            <span className="text-gradient">SQSOFT</span>
-            <span className="inline-block w-[3px] h-12 md:h-16 bg-primary ml-2 align-middle animate-blink" />
+          <h1 className="font-mono text-4xl md:text-6xl font-bold tracking-tight mb-4">
+            <span className="text-gradient">Lucio Carrera</span>
+            <span className="inline-block w-[3px] h-10 md:h-14 bg-primary ml-2 align-middle animate-blink" />
           </h1>
           
           <p className="font-mono text-lg md:text-xl text-muted-foreground mt-6 animate-fade-up animation-delay-200">
