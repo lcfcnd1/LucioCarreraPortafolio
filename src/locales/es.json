@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Desarrollador Full Stack",
+    "description": "Transformo ideas en soluciones digitales de alto impacto. Especializado en crear aplicaciones web modernas y escalables.",
+    "cta": {
+      "viewWork": "Ver mis proyectos",
+      "contact": "Contáctame"
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "SOBRE MÍ",
+    "heading": "Desarrollo soluciones que",
+    "headingHighlight": "impulsan negocios",
+    "description": "Soy un desarrollador apasionado por crear experiencias digitales excepcionales. Mi enfoque combina código limpio, diseño intuitivo y las mejores prácticas de la industria.",
+    "paragraph2": "Trabajo con startups y empresas establecidas para transformar sus visiones en productos digitales que generan resultados reales. Cada proyecto es una oportunidad para superar expectativas.",
+    "paragraph3": "Mi compromiso: entregar soluciones escalables, mantenibles y que realmente resuelvan problemas de negocio.",
+    "stats": {
+      "projects": "Proyectos completados",
+      "clients": "Clientes satisfechos",
+      "experience": "Años de experiencia"
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "subtitle": "STACK",
+    "heading": "Tecnologías &",
+    "headingHighlight": "Herramientas",
+    "description": "Un arsenal de tecnologías modernas para construir soluciones robustas y escalables."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "PROYECTOS",
+    "heading": "Trabajo",
+    "headingHighlight": "destacado",
+    "description": "Una selección de proyectos que demuestran mi capacidad para entregar soluciones completas y de alta calidad.",
+    "viewDemo": "Ver demo",
+    "viewCode": "Ver código",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Plataforma completa de comercio electrónico con gestión de inventario, pagos integrados y panel de administración."
+      },
+      "dashboard": {
+        "title": "Dashboard Analytics",
+        "description": "Sistema de análisis de datos en tiempo real con visualizaciones interactivas y reportes automatizados."
+      },
+      "management": {
+        "title": "App de Gestión",
+        "description": "Aplicación de gestión empresarial con módulos de RRHH, finanzas y CRM integrados."
+      },
+      "booking": {
+        "title": "Sistema de Reservas",
+        "description": "Plataforma de reservas online para restaurantes con calendario interactivo y notificaciones en tiempo real."
+      },
+      "fintech": {
+        "title": "Fintech App",
+        "description": "Aplicación financiera con seguimiento de gastos, presupuestos inteligentes y análisis de inversiones."
+      },
+      "social": {
+        "title": "Social Media Dashboard",
+        "description": "Panel de control para gestión de redes sociales con programación de posts y métricas unificadas."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "CONTACTO",
+    "heading": "¿Tienes un {highlight} en mente?",
+    "highlight": "proyecto",
+    "description": "Estoy disponible para proyectos freelance y colaboraciones. Hablemos sobre cómo puedo ayudarte.",
+    "info": {
+      "email": "Email",
+      "location": "Ubicación",
+      "locationText": "Disponible para trabajo remoto",
+      "response": "Respuesta en menos de 24h"
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿En qué puedo ayudarte?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "✅ Mensaje enviado",
+      "successDescription": "Gracias por contactarme. Te responderé pronto.",
+      "error": "❌ Error",
+      "errorDescription": "Hubo un problema al enviar tu mensaje. Por favor, intenta de nuevo."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "madeWith": "Made with",
+    "with": "with",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "technologies": "Tecnologías",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  }
+}
+

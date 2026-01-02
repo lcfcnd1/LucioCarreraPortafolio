@@ -1,11 +1,13 @@
 import { Github, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: Github, href: "https://github.com/lcfcnd1/", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/lucio-carrera-6a6bb9220/", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/lcfcnd1/", label: t('footer.social.github') },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/lucio-carrera-6a6bb9220/", label: t('footer.social.linkedin') },
   ];
 
   return (
@@ -41,7 +43,7 @@ const Footer = () => {
       {/* Made with love */}
       <div className="mt-8 pt-6 border-t border-border/30 text-center">
         <p className="text-muted-foreground text-xs font-mono">
-          Made with <span className="text-red-500">♥</span> with{" "}
+          {t('footer.madeWith')} <span className="text-red-500">♥</span> {t('footer.with')}{" "}
           <span className="text-foreground">React</span> •{" "}
           <span className="text-foreground">TypeScript</span> •{" "}
           <span className="text-foreground">Tailwind CSS</span> •{" "}

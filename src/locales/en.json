@@ -1,0 +1,113 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title": "Full Stack Developer",
+    "description": "I transform ideas into high-impact digital solutions. Specialized in creating modern and scalable web applications.",
+    "cta": {
+      "viewWork": "View my projects",
+      "contact": "Contact me"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "ABOUT ME",
+    "heading": "I develop solutions that",
+    "headingHighlight": "drive businesses",
+    "description": "I'm a developer passionate about creating exceptional digital experiences. My approach combines clean code, intuitive design and industry best practices.",
+    "paragraph2": "I work with startups and established companies to transform their visions into digital products that generate real results. Every project is an opportunity to exceed expectations.",
+    "paragraph3": "My commitment: deliver scalable, maintainable solutions that truly solve business problems.",
+    "stats": {
+      "projects": "Projects completed",
+      "clients": "Satisfied clients",
+      "experience": "Years of experience"
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "STACK",
+    "heading": "Technologies &",
+    "headingHighlight": "Tools",
+    "description": "An arsenal of modern technologies to build robust and scalable solutions."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "PROJECTS",
+    "heading": "Featured",
+    "headingHighlight": "work",
+    "description": "A selection of projects that demonstrate my ability to deliver complete, high-quality solutions.",
+    "viewDemo": "View demo",
+    "viewCode": "View code",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Complete e-commerce platform with inventory management, integrated payments and admin panel."
+      },
+      "dashboard": {
+        "title": "Dashboard Analytics",
+        "description": "Real-time data analysis system with interactive visualizations and automated reports."
+      },
+      "management": {
+        "title": "Management App",
+        "description": "Business management application with integrated HR, finance and CRM modules."
+      },
+      "booking": {
+        "title": "Booking System",
+        "description": "Online booking platform for restaurants with interactive calendar and real-time notifications."
+      },
+      "fintech": {
+        "title": "Fintech App",
+        "description": "Financial application with expense tracking, smart budgets and investment analysis."
+      },
+      "social": {
+        "title": "Social Media Dashboard",
+        "description": "Control panel for social media management with post scheduling and unified metrics."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "CONTACT",
+    "heading": "Do you have a {highlight} in mind?",
+    "highlight": "project",
+    "description": "I'm available for freelance projects and collaborations. Let's talk about how I can help you.",
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "locationText": "Available for remote work",
+      "response": "Response within 24h"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can I help you?",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "✅ Message sent",
+      "successDescription": "Thank you for contacting me. I'll respond soon.",
+      "error": "❌ Error",
+      "errorDescription": "There was a problem sending your message. Please try again."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "with": "with",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  },
+  "nav": {
+    "about": "About",
+    "technologies": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
+

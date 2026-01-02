@@ -1,7 +1,10 @@
 import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Hero = () => {
+  const { t } = useTranslation();
   const [glowingCell, setGlowingCell] = useState<number | null>(null);
   
   // Calculate grid based on screen size
@@ -45,6 +48,11 @@ const Hero = () => {
       {/* Glow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]" />
       
+      {/* Language Switcher */}
+      <div className="absolute top-6 right-6 z-20">
+        <LanguageSwitcher />
+      </div>
+      
       {/* Terminal window */}
       <div className="relative z-10 glass-card p-1 max-w-2xl w-full animate-fade-up">
         {/* Terminal header */}
@@ -67,11 +75,11 @@ const Hero = () => {
           </h1>
           
           <p className="font-mono text-lg md:text-xl text-muted-foreground mt-6 animate-fade-up animation-delay-200">
-            <span className="text-primary">&gt;</span> Desarrollador Full Stack
+            <span className="text-primary">&gt;</span> {t('hero.title')}
           </p>
           
           <p className="text-muted-foreground/70 mt-4 max-w-md animate-fade-up animation-delay-300">
-            Transformando ideas en soluciones digitales de alto impacto
+            {t('hero.description')}
           </p>
         </div>
       </div>

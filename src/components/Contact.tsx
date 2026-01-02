@@ -5,8 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/lib/supabase";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -33,8 +35,8 @@ const Contact = () => {
 
       // Mostrar mensaje de éxito
       toast({
-        title: "✅ Mensaje enviado",
-        description: "Gracias por contactarme. Te responderé pronto.",
+        title: t('contact.form.success'),
+        description: t('contact.form.successDescription'),
       });
       
       // Limpiar el formulario
@@ -42,8 +44,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error al enviar mensaje:', error);
       toast({
-        title: "❌ Error",
-        description: "Hubo un problema al enviar tu mensaje. Por favor, intenta de nuevo.",
+        title: t('contact.form.error'),
+        description: t('contact.form.errorDescription'),
         variant: "destructive",
       });
     } finally {
@@ -55,13 +57,14 @@ const Contact = () => {
     <section id="contact" className="py-24 md:py-32 px-6 bg-secondary/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="font-mono text-primary text-sm tracking-wider">// CONTACTO</span>
+          <span className="font-mono text-primary text-sm tracking-wider">// {t('contact.subtitle')}</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-4">
-            ¿Tienes un <span className="text-gradient">proyecto</span> en mente?
+            {t('contact.heading', { highlight: '' }).split('{highlight}')[0]}
+            <span className="text-gradient">{t('contact.highlight')}</span>
+            {t('contact.heading', { highlight: '' }).split('{highlight}')[1]}
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Estoy disponible para proyectos freelance y colaboraciones. 
-            Hablemos sobre cómo puedo ayudarte.
+            {t('contact.description')}
           </p>
         </div>
 
@@ -73,7 +76,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Email</h3>
+                <h3 className="font-semibold mb-1">{t('contact.info.email')}</h3>
                 <a href="mailto:lcfcndw@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                   lcfcndw@gmail.com
                 </a>
@@ -85,9 +88,9 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold mb-1">Ubicación</h3>
+                <h3 className="font-semibold mb-1">{t('contact.info.location')}</h3>
                 <p className="text-muted-foreground">
-                  Disponible para trabajo remoto
+                  {t('contact.info.locationText')}
                 </p>
               </div>
             </div>
@@ -96,7 +99,7 @@ const Contact = () => {
               <p className="font-mono text-sm text-muted-foreground">
                 <span className="text-primary">const</span> response = <span className="text-primary">await</span> contact();
                 <br />
-                <span className="text-muted-foreground/50">// Respuesta en menos de 24h</span>
+                <span className="text-muted-foreground/50">// {t('contact.info.response')}</span>
               </p>
             </div>
           </div>
@@ -107,25 +110,25 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
-                    Nombre
+                    {t('contact.form.name')}
                   </label>
                   <Input 
                     id="name"
                     name="name"
-                    placeholder="Tu nombre"
+                    placeholder={t('contact.form.namePlaceholder')}
                     required
                     className="bg-secondary/50 border-border/50 focus:border-primary"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                    {t('contact.form.email')}
                   </label>
                   <Input 
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="tu@email.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                     required
                     className="bg-secondary/50 border-border/50 focus:border-primary"
                   />
@@ -134,12 +137,12 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium">
-                  Asunto
+                  {t('contact.form.subject')}
                 </label>
                 <Input 
                   id="subject"
                   name="subject"
-                  placeholder="¿En qué puedo ayudarte?"
+                  placeholder={t('contact.form.subjectPlaceholder')}
                   required
                   className="bg-secondary/50 border-border/50 focus:border-primary"
                 />
@@ -147,12 +150,12 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
-                  Mensaje
+                  {t('contact.form.message')}
                 </label>
                 <Textarea 
                   id="message"
                   name="message"
-                  placeholder="Cuéntame sobre tu proyecto..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                   rows={5}
                   required
                   className="bg-secondary/50 border-border/50 focus:border-primary resize-none"
@@ -165,10 +168,10 @@ const Contact = () => {
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
               >
                 {isSubmitting ? (
-                  "Enviando..."
+                  t('contact.form.sending')
                 ) : (
                   <>
-                    Enviar mensaje
+                    {t('contact.form.submit')}
                     <Send className="w-4 h-4 ml-2" />
                   </>
                 )}

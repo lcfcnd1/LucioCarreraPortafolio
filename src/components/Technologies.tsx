@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const Technologies = () => {
+  const { t } = useTranslation();
+  
   const techCategories = [
     {
       title: "Frontend",
@@ -22,12 +26,12 @@ const Technologies = () => {
     <section id="tech" className="py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="font-mono text-primary text-sm tracking-wider">// STACK</span>
+          <span className="font-mono text-primary text-sm tracking-wider">// {t('technologies.subtitle')}</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-4">
-            Tecnologías & <span className="text-gradient">Herramientas</span>
+            {t('technologies.heading')} <span className="text-gradient">{t('technologies.headingHighlight')}</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Un arsenal de tecnologías modernas para construir soluciones robustas y escalables.
+            {t('technologies.description')}
           </p>
         </div>
 
