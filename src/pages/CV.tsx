@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { getIcon } from "@/lib/icon-map";
 import { Progress } from "@/components/ui/progress";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface CVData {
   informacion_personal: {
@@ -73,6 +75,7 @@ interface CVData {
   idiomas: {
     items: {
       idioma: string;
+      nivel: string;
     }[];
   };
   hobbies: {
@@ -91,13 +94,16 @@ interface CVData {
 }
 
 const CV = () => {
+  const { t, i18n } = useTranslation();
   const [cvData, setCvData] = useState<CVData | null>(null);
 
   useEffect(() => {
-    fetch("/luciocarreracv.json")
+    const lang = i18n.language.split('-')[0];
+    const file = lang === 'es' ? 'luciocarreracv.json' : 'luciocarreracv.en.json';
+    fetch(`/${file}`)
       .then((res) => res.json())
       .then((data) => setCvData(data));
-  }, []);
+  }, [i18n.language]);
 
   if (!cvData) {
     return <div className="min-h-screen bg-background flex items-center justify-center">Cargando...</div>;
@@ -116,6 +122,8 @@ const CV = () => {
     secciones_adicionales,
   } = cvData;
 
+  const maxExperience = Math.max(...habilidades.tecnicas.items.map(skill => parseInt(skill.experiencia)));
+
   const getContactLink = (plataforma: string, valor: string) => {
     if (plataforma === "E-mail") return `mailto:${valor}`;
     if (plataforma === "WhatsApp") return `https://wa.me/${valor.replace('+', '')}`;
@@ -130,9 +138,12 @@ const CV = () => {
   return (
     <div className="min-h-screen bg-background text-foreground font-body">
       <div className="max-w-6xl mx-auto p-4 sm:p-8">
-        <Button asChild variant="outline" className="mb-8">
-            <Link to="/#">Volver</Link>
-        </Button>
+        <div className="flex justify-between items-center mb-8">
+            <Button asChild variant="outline">
+                <Link to="/#">{t('cv.back_button', 'Volver')}</Link>
+            </Button>
+            <LanguageSwitcher />
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Columna Izquierda */}
@@ -240,7 +251,7 @@ const CV = () => {
                                 <span className="font-semibold">{skill.tecnologia}</span>
                                 <span className="text-sm text-muted-foreground">{skill.experiencia}</span>
                             </div>
-                            <Progress value={parseInt(skill.experiencia) * 20 - 20} />
+                            <Progress value={(parseInt(skill.experiencia) / maxExperience) * 100} />
                         </div>
                     ))}
                 </CardContent>
@@ -289,8 +300,11 @@ const CV = () => {
                     <CardContent className="space-y-4">
                         {idiomas.items.map((lang, i) => (
                             <div key={i}>
-                                <p className="font-semibold">{lang.idioma}</p>
-                                <Progress value={75} className="mt-2" />
+                                <div className="flex justify-between">
+                                  <p className="font-semibold">{lang.idioma}</p>
+                                  <p className="text-sm text-muted-foreground">{lang.nivel}</p>
+                                </div>
+                                <Progress value={60} className="mt-2" />
                             </div>
                         ))}
                     </CardContent>

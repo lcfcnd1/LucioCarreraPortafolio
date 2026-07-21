@@ -28,7 +28,7 @@
       },
       {
         "campo": "Modalidad de trabajo",
-        "valor": "Remoto / Híbrido / Presencial",
+        "valor": "Remoto",
         "icono": "monitor_de_computadora"
       }
     ]
@@ -113,7 +113,9 @@
         { "tecnologia": "NODE.JS", "experiencia": "6 Años", "indicador": "barra_de_progreso" },
         { "tecnologia": "PYTHON", "experiencia": "3 Años", "indicador": "barra_de_progreso" },
         { "tecnologia": "RUBY", "experiencia": "1 Año", "indicador": "barra_de_progreso" },
-        { "tecnologia": "C#", "experiencia": "3 Años", "indicador": "barra_de_progreso" }
+        { "tecnologia": "C#", "experiencia": "3 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "TensorFlow", "experiencia": "2 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "PyTorch", "experiencia": "1 Año", "indicador": "barra_de_progreso" }
       ]
     },
     "blandas": {
@@ -159,6 +161,7 @@
     "items": [
       {
         "idioma": "INGLES",
+        "nivel": "Intermedio",
         "indicador": "barra_de_progreso_por_bloques"
       }
     ]

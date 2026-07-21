@@ -108,6 +108,10 @@
     "technologies": "Tecnologías",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "cv": {
+    "view_button": "Ver CV",
+    "back_button": "Volver"
   }
 }
 

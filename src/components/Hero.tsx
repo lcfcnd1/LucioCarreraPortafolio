@@ -84,7 +84,7 @@ const Hero = () => {
             {t('hero.description')}
           </p>
            <Button asChild variant="outline" className="mt-4 animate-fade-up animation-delay-400">
-                <Link to="/luciocarreracv">Ver CV</Link>
+                <Link to="/luciocarreracv">{t('cv.view_button', 'Ver CV')}</Link>
             </Button>
         </div>
       </div>

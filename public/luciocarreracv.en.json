@@ -1,0 +1,196 @@
+{
+  "diseno": {
+    "tipografias": {
+      "titulos_y_nombre": "Bold geometric sans-serif (similar to Montserrat, Poppins or Gotham)",
+      "cuerpo_de_texto": "Legible and clean sans-serif (similar to Montserrat Regular, Roboto or Open Sans)"
+    },
+    "estilo_de_iconos": "Minimalist, outline style, flat icons and brand logos."
+  },
+  "informacion_personal": {
+    "nombre": "LUCIO CARRERA",
+    "titulo": "MULTIPURPOSE DEVELOPER",
+    "resumen": "Professional with a solid background in web development and a great capacity to adapt to different environments and challenges. I stand out for my commitment, continuous learning, attention to detail, and focus on achieving quality results. I seek to add value to any team, approaching problems with creativity, responsibility, and a solution-oriented mindset.",
+    "detalles": [
+      {
+        "campo": "Date of birth",
+        "valor": "10/30/1998",
+        "icono": "calendario"
+      },
+      {
+        "campo": "City",
+        "valor": "Capital, Santa Fe",
+        "icono": "pin_de_ubicacion"
+      },
+      {
+        "campo": "Availability",
+        "valor": "Immediate",
+        "icono": "reloj"
+      },
+      {
+        "campo": "Work modality",
+        "valor": "Remote",
+        "icono": "monitor_de_computadora"
+      }
+    ]
+  },
+  "contacto": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "datos": [
+      {
+        "plataforma": "Phone",
+        "valor": "+543426397163",
+        "icono": "auricular_de_telefono"
+      },
+      {
+        "plataforma": "WhatsApp",
+        "valor": "+543426397163",
+        "icono": "logotipo_whatsapp"
+      },
+      {
+        "plataforma": "E-mail",
+        "valor": "lcfcndw@gmail.com",
+        "icono": "sobre_de_correo"
+      }
+    ]
+  },
+  "redes_sociales": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "datos": [
+      {
+        "plataforma": "Instagram",
+        "usuario": "lucio_is_me",
+        "icono": "logotipo_instagram"
+      }
+    ]
+  },
+  "perfil_personal": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "items": [
+      { "habilidad": "Responsible and committed", "icono": "escudo_con_marca_de_verificacion_(check)" },
+      { "habilidad": "Proactive and decisive", "icono": "engranajes_interconectados" },
+      { "habilidad": "Quick learning", "icono": "cabeza_humana_con_bombilla_de_luz" },
+      { "habilidad": "Teamwork", "icono": "grupo_de_personas" },
+      { "habilidad": "Good communication", "icono": "burbujas_de_dialogo" },
+      { "habilidad": "Organized and detail-oriented", "icono": "portapapeles_con_lista" },
+      { "habilidad": "Adaptable to new challenges", "icono": "flechas_cruzadas_entrelazadas" },
+      { "habilidad": "Results-oriented", "icono": "grafico_de_barras_con_flecha_ascendente" }
+    ]
+  },
+  "experiencia": {
+    "icono_seccion": "maletin_de_trabajo",
+    "viñetas_de_lista": "punto_naranja",
+    "trabajos": [
+      {
+        "empresa": "Onus Sistemas",
+        "periodo": "2020 - 2022",
+        "puesto": "API Engineer",
+        "responsabilidades": [
+          "Development and maintenance of RESTful APIs for the company's ERP system.",
+          "Integration with third-party services and SQL databases.",
+          "Optimization of queries and backend performance.",
+          "Collaboration in the design of scalable architecture."
+        ]
+      },
+      {
+        "empresa": "Freelance",
+        "periodo": "2019 - 2020",
+        "puesto": "Fullstack",
+        "responsabilidades": [
+          "Development of complete web applications with Node.js, Express and MySQL.",
+          "Implementation of responsive interfaces with HTML, CSS and JavaScript.",
+          "Automation of tasks and processes with custom scripts.",
+          "Project management, customer service and deployment on servers."
+        ]
+      }
+    ]
+  },
+  "habilidades": {
+    "tecnicas": {
+      "icono_seccion": "engranaje",
+      "items": [
+        { "tecnologia": "PHP", "experiencia": "5 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "MYSQL", "experiencia": "5 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "NODE.JS", "experiencia": "6 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "PYTHON", "experiencia": "3 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "RUBY", "experiencia": "1 Year", "indicador": "barra_de_progreso" },
+        { "tecnologia": "C#", "experiencia": "3 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "TensorFlow", "experiencia": "2 Years", "indicador": "barra_de_progreso" },
+        { "tecnologia": "PyTorch", "experiencia": "1 Year", "indicador": "barra_de_progreso" }
+      ]
+    },
+    "blandas": {
+      "icono_seccion": "silueta_de_usuario",
+      "viñetas_de_lista": "marca_de_verificacion_naranja_(check)",
+      "items": [
+        "Problem resolution",
+        "Logical and analytical thinking",
+        "Effective communication",
+        "Time management",
+        "Teamwork",
+        "Adaptability and flexibility",
+        "Self-taught and proactive",
+        "Customer orientation"
+      ]
+    },
+    "otras_habilidades": {
+      "icono_seccion": "estrella",
+      "items": [
+        { "habilidad": "Version control (Git / GitHub)", "icono": "nodos_de_ramificacion_(git)" },
+        { "habilidad": "Responsive design (HTML, CSS, JS)", "icono": "monitor_y_telefono_movil" },
+        { "habilidad": "Databases (SQL)", "icono": "discos_apilados_(cilindro)" },
+        { "habilidad": "APIs and RESTful services", "icono": "nodos_de_conexion_en_red" },
+        { "habilidad": "Server deployment (Linux)", "icono": "rack_de_servidor" },
+        { "habilidad": "Agile methodologies (Scrum / Kanban)", "icono": "cabeza_con_engranajes_o_ideas" },
+        { "habilidad": "Technical documentation", "icono": "documento_de_texto" },
+        { "habilidad": "Office tools (Word, Excel, Google Workspace)", "icono": "documento_con_tabla" }
+      ]
+    },
+    "formacion_academica": {
+    "icono_seccion": "birrete_de_graduacion",
+    "viñetas_de_lista": "punto_naranja",
+    "items": [
+      {
+        "institucion": "High School",
+        "titulo": "Bachelor"
+      }
+    ]
+  },
+  "idiomas": {
+    "icono_seccion": "globo_terraqueo",
+    "items": [
+      {
+        "idioma": "ENGLISH",
+        "nivel": "Intermediate",
+        "indicador": "barra_de_progreso_por_bloques"
+      }
+    ]
+  },
+  "hobbies": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "items": [
+      { "nombre": "Videogames", "icono": "mando_de_consola" },
+      { "nombre": "Photography", "icono": "camara_fotografica" },
+      { "nombre": "Music", "icono": "nota_musical" }
+    ]
+  },
+  "secciones_adicionales": {
+    "fondo": "panel_azul_oscuro",
+    "items": [
+      {
+        "titulo": "FOCUS",
+        "texto": "Committed to quality, continuous improvement, and the delivery of effective solutions.",
+        "icono": "diana_de_tiro_al_blanco_con_flecha"
+      },
+      {
+        "titulo": "MY GOAL",
+        "texto": "Join a team where I can contribute my skills, continue to grow, and face new challenges.",
+        "icono": "portapapeles_con_diana_y_flecha"
+      },
+      {
+        "titulo": "ADDED VALUE",
+        "texto": "Versatility, willingness to learn, and ability to adapt to any role or project.",
+        "icono": "medalla_con_estrella"
+      }
+    ]
+  }
+}
