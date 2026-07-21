@@ -172,7 +172,7 @@ const CV = () => {
             </Card>
 
             <Card>
-                <CardHeader><CardTitle className="font-heading text-primary">Contacto</CardTitle></CardHeader>
+                <CardHeader><CardTitle className="font-heading text-primary">{t('cv.contact')}</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
                     {contacto.datos.map((c, i) => (
                         <a key={i} href={getContactLink(c.plataforma, c.valor)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:text-primary transition-colors">
@@ -183,7 +183,7 @@ const CV = () => {
                 </CardContent>
             </Card>
              <Card>
-                <CardHeader><CardTitle className="font-heading text-primary">Redes</CardTitle></CardHeader>
+                <CardHeader><CardTitle className="font-heading text-primary">{t('cv.social')}</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
                     {redes_sociales.datos.map((rs, i) => (
                         <a key={i} href={getSocialLink(rs.plataforma, rs.usuario)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:text-primary transition-colors">
@@ -195,7 +195,7 @@ const CV = () => {
             </Card>
 
             <Card>
-              <CardHeader><CardTitle className="font-heading text-primary">Perfil Personal</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="font-heading text-primary">{t('cv.personal_profile')}</CardTitle></CardHeader>
               <CardContent className="space-y-3">
                 {perfil_personal.items.map((item, i) => (
                    <div key={i} className="flex items-start gap-3">
@@ -207,7 +207,7 @@ const CV = () => {
             </Card>
 
             <Card>
-              <CardHeader><CardTitle className="font-heading text-primary">Hobbies</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="font-heading text-primary">{t('cv.hobbies')}</CardTitle></CardHeader>
               <CardContent className="flex justify-around">
                 {hobbies.items.map((hobbie, i) => (
                    <div key={i} className="flex flex-col items-center gap-2 text-muted-foreground">
@@ -223,12 +223,12 @@ const CV = () => {
           {/* Columna Derecha */}
           <div className="md:col-span-2 space-y-8">
             <Card>
-              <CardHeader><CardTitle className="font-heading text-2xl">Resumen Profesional</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="font-heading text-2xl">{t('cv.professional_summary')}</CardTitle></CardHeader>
               <CardContent><p className="text-muted-foreground">{informacion_personal.resumen}</p></CardContent>
             </Card>
             
             <Card>
-                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("maletin_de_trabajo")}</div> Experiencia Laboral</CardTitle></CardHeader>
+                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("maletin_de_trabajo")}</div> {t('cv.work_experience')}</CardTitle></CardHeader>
                 <CardContent className="space-y-6">
                     {experiencia.trabajos.map((job, i) =>(
                         <div key={i}>
@@ -243,7 +243,7 @@ const CV = () => {
             </Card>
             
             <Card>
-                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("engranaje")}</div> Habilidades Técnicas</CardTitle></CardHeader>
+                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("engranaje")}</div> {t('cv.technical_skills')}</CardTitle></CardHeader>
                 <CardContent className="space-y-4">
                     {habilidades.tecnicas.items.map((skill, i) => (
                         <div key={i}>
@@ -259,7 +259,7 @@ const CV = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                  <Card>
-                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("silueta_de_usuario")}</div> Habilidades Blandas</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("silueta_de_usuario")}</div> {t('cv.soft_skills')}</CardTitle></CardHeader>
                     <CardContent className="space-y-2">
                         {habilidades.blandas.items.map((skill, i) => (
                             <div key={i} className="flex items-center gap-3">
@@ -270,7 +270,7 @@ const CV = () => {
                     </CardContent>
                 </Card>
                 <Card>
-                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("estrella")}</div> Otras Habilidades</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("estrella")}</div> {t('cv.other_skills')}</CardTitle></CardHeader>
                     <CardContent className="space-y-3">
                         {habilidades.otras_habilidades.items.map((skill, i) => (
                              <div key={i} className="flex items-center gap-3">
@@ -283,7 +283,7 @@ const CV = () => {
             </div>
 
              <Card>
-                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("birrete_de_graduacion")}</div> Formación Académica</CardTitle></CardHeader>
+                <CardHeader><CardTitle className="font-heading text-2xl flex items-center gap-3"><div className="text-primary">{getIcon("birrete_de_graduacion")}</div> {t('cv.education')}</CardTitle></CardHeader>
                 <CardContent>
                      {formacion_academica.items.map((form, i) => (
                         <div key={i}>
@@ -296,7 +296,7 @@ const CV = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                  <Card>
-                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("globo_terraqueo")}</div> Idiomas</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="font-heading text-xl flex items-center gap-3"><div className="text-primary">{getIcon("globo_terraqueo")}</div> {t('cv.languages')}</CardTitle></CardHeader>
                     <CardContent className="space-y-4">
                         {idiomas.items.map((lang, i) => (
                             <div key={i}>
@@ -310,7 +310,7 @@ const CV = () => {
                     </CardContent>
                 </Card>
                  <Card className="bg-primary/5">
-                    <CardHeader><CardTitle className="font-heading text-xl">Objetivos</CardTitle></CardHeader>
+                    <CardHeader><CardTitle className="font-heading text-xl">{t('cv.objectives')}</CardTitle></CardHeader>
                     <CardContent className="space-y-6">
                         {secciones_adicionales.items.map((item, i) => (
                             <div key={i} className="flex items-start gap-4">

@@ -111,7 +111,19 @@
   },
   "cv": {
     "view_button": "View CV",
-    "back_button": "Back"
+    "back_button": "Back",
+    "contact": "Contact",
+    "social": "Social",
+    "personal_profile": "Personal Profile",
+    "hobbies": "Hobbies",
+    "professional_summary": "Professional Summary",
+    "work_experience": "Work Experience",
+    "technical_skills": "Technical Skills",
+    "soft_skills": "Soft Skills",
+    "other_skills": "Other Skills",
+    "education": "Education",
+    "languages": "Languages",
+    "objectives": "Objectives"
   }
 }
 

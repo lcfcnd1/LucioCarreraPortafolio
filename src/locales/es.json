@@ -111,7 +111,19 @@
   },
   "cv": {
     "view_button": "Ver CV",
-    "back_button": "Volver"
+    "back_button": "Volver",
+    "contact": "Contacto",
+    "social": "Redes",
+    "personal_profile": "Perfil Personal",
+    "hobbies": "Hobbies",
+    "professional_summary": "Resumen Profesional",
+    "work_experience": "Experiencia Laboral",
+    "technical_skills": "Habilidades Técnicas",
+    "soft_skills": "Habilidades Blandas",
+    "other_skills": "Otras Habilidades",
+    "education": "Formación Académica",
+    "languages": "Idiomas",
+    "objectives": "Objetivos"
   }
 }
 
