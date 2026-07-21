@@ -1,105 +1,194 @@
 {
+  "diseno": {
+    "tipografias": {
+      "titulos_y_nombre": "Sans-serif geométrica en negrita (similar a Montserrat, Poppins o Gotham)",
+      "cuerpo_de_texto": "Sans-serif legible y limpia (similar a Montserrat Regular, Roboto u Open Sans)"
+    },
+    "estilo_de_iconos": "Minimalistas, estilo línea (outline), íconos planos (flat) y logotipos de marcas."
+  },
   "informacion_personal": {
     "nombre": "LUCIO CARRERA",
     "titulo": "DESARROLLADOR MULTIPROPÓSITO",
-    "fecha_de_nacimiento": "30/10/1998",
-    "ubicacion": "Ciudad Capital, Santa Fe",
-    "disponibilidad": "Inmediata",
-    "modalidad_de_trabajo": ["Remoto", "Híbrido", "Presencial"],
-    "resumen": "Profesional con sólida formación en desarrollo web y amplia capacidad para adaptarme a distintos entornos y desafíos. Me destaco por mi compromiso, aprendizaje continuo, atención al detalle y enfoque en lograr resultados de calidad. Busco aportar valor en cualquier equipo, abordando problemas con creatividad, responsabilidad y orientación a soluciones."
-  },
-  "contacto": {
-    "celular": "+543426397163",
-    "whatsapp": "+543426397163",
-    "email": "lcfcndw@gmail.com"
-  },
-  "redes_sociales": {
-    "instagram": "lucio_is_me"
-  },
-  "perfil_personal": [
-    "Responsable y comprometido",
-    "Proactivo y resolutivo",
-    "Aprendizaje rápido",
-    "Trabajo en equipo",
-    "Buena comunicación",
-    "Organizado y detallista",
-    "Adaptable a nuevos desafíos",
-    "Orientado a resultados"
-  ],
-  "experiencia": [
-    {
-      "empresa": "Onus Sistemas",
-      "periodo": "2020 - 2022",
-      "puesto": "API Engineer",
-      "responsabilidades": [
-        "Desarrollo y mantenimiento de APIs RESTful para el sistema ERP de la empresa.",
-        "Integración con servicios de terceros y bases de datos SQL.",
-        "Optimización de consultas y rendimiento del backend.",
-        "Colaboración en el diseño de arquitectura escalable."
-      ]
-    },
-    {
-      "empresa": "Freelance",
-      "periodo": "2019 - 2020",
-      "puesto": "Fullstack",
-      "responsabilidades": [
-        "Desarrollo de aplicaciones web completas con Node.js, Express y MySQL.",
-        "Implementación de interfaces responsivas con HTML, CSS y JavaScript.",
-        "Automatización de tareas y procesos con scripts personalizados.",
-        "Gestión de proyectos, atención al cliente y despliegue en servidores."
-      ]
-    }
-  ],
-  "habilidades": {
-    "tecnicas": [
-      { "tecnologia": "PHP", "experiencia": "5 Años" },
-      { "tecnologia": "MYSQL", "experiencia": "5 Años" },
-      { "tecnologia": "NODE.JS", "experiencia": "6 Años" },
-      { "tecnologia": "PYTHON", "experiencia": "3 Años" },
-      { "tecnologia": "RUBY", "experiencia": "1 Año" },
-      { "tecnologia": "C#", "experiencia": "3 Años" }
-    ],
-    "blandas": [
-      "Resolución de problemas",
-      "Pensamiento lógico y analítico",
-      "Comunicación efectiva",
-      "Gestión del tiempo",
-      "Trabajo en equipo",
-      "Adaptabilidad y flexibilidad",
-      "Autodidacta y proactivo",
-      "Orientación al cliente"
-    ],
-    "otras_habilidades": [
-      "Control de versiones (Git / GitHub)",
-      "Diseño responsivo (HTML, CSS, JS)",
-      "Bases de datos (SQL)",
-      "APIs y servicios RESTful",
-      "Despliegue en servidores (Linux)",
-      "Metodologías ágiles (Scrum / Kanban)",
-      "Documentación técnica",
-      "Herramientas de oficina (Word, Excel, Google Workspace)"
+    "resumen": "Profesional con sólida formación en desarrollo web y amplia capacidad para adaptarme a distintos entornos y desafíos. Me destaco por mi compromiso, aprendizaje continuo, atención al detalle y enfoque en lograr resultados de calidad. Busco aportar valor en cualquier equipo, abordando problemas con creatividad, responsabilidad y orientación a soluciones.",
+    "detalles": [
+      {
+        "campo": "Fecha de nacimiento",
+        "valor": "30/10/1998",
+        "icono": "calendario"
+      },
+      {
+        "campo": "Ciudad",
+        "valor": "Capital, Santa Fe",
+        "icono": "pin_de_ubicacion"
+      },
+      {
+        "campo": "Disponibilidad",
+        "valor": "Inmediata",
+        "icono": "reloj"
+      },
+      {
+        "campo": "Modalidad de trabajo",
+        "valor": "Remoto / Híbrido / Presencial",
+        "icono": "monitor_de_computadora"
+      }
     ]
   },
-  "formacion_academica": [
-    {
-      "institucion": "Escuela Secundaria",
-      "titulo": "Bachillerato"
+  "contacto": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "datos": [
+      {
+        "plataforma": "Celular",
+        "valor": "+543426397163",
+        "icono": "auricular_de_telefono"
+      },
+      {
+        "plataforma": "WhatsApp",
+        "valor": "+543426397163",
+        "icono": "logotipo_whatsapp"
+      },
+      {
+        "plataforma": "E-mail",
+        "valor": "lcfcndw@gmail.com",
+        "icono": "sobre_de_correo"
+      }
+    ]
+  },
+  "redes_sociales": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "datos": [
+      {
+        "plataforma": "Instagram",
+        "usuario": "lucio_is_me",
+        "icono": "logotipo_instagram"
+      }
+    ]
+  },
+  "perfil_personal": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "items": [
+      { "habilidad": "Responsable y comprometido", "icono": "escudo_con_marca_de_verificacion_(check)" },
+      { "habilidad": "Proactivo y resolutivo", "icono": "engranajes_interconectados" },
+      { "habilidad": "Aprendizaje rápido", "icono": "cabeza_humana_con_bombilla_de_luz" },
+      { "habilidad": "Trabajo en equipo", "icono": "grupo_de_personas" },
+      { "habilidad": "Buena comunicación", "icono": "burbujas_de_dialogo" },
+      { "habilidad": "Organizado y detallista", "icono": "portapapeles_con_lista" },
+      { "habilidad": "Adaptable a nuevos desafíos", "icono": "flechas_cruzadas_entrelazadas" },
+      { "habilidad": "Orientado a resultados", "icono": "grafico_de_barras_con_flecha_ascendente" }
+    ]
+  },
+  "experiencia": {
+    "icono_seccion": "maletin_de_trabajo",
+    "viñetas_de_lista": "punto_naranja",
+    "trabajos": [
+      {
+        "empresa": "Onus Sistemas",
+        "periodo": "2020 - 2022",
+        "puesto": "API Engineer",
+        "responsabilidades": [
+          "Desarrollo y mantenimiento de APIs RESTful para el sistema ERP de la empresa.",
+          "Integración con servicios de terceros y bases de datos SQL.",
+          "Optimización de consultas y rendimiento del backend.",
+          "Colaboración en el diseño de arquitectura escalable."
+        ]
+      },
+      {
+        "empresa": "Freelance",
+        "periodo": "2019 - 2020",
+        "puesto": "Fullstack",
+        "responsabilidades": [
+          "Desarrollo de aplicaciones web completas con Node.js, Express y MySQL.",
+          "Implementación de interfaces responsivas con HTML, CSS y JavaScript.",
+          "Automatización de tareas y procesos con scripts personalizados.",
+          "Gestión de proyectos, atención al cliente y despliegue en servidores."
+        ]
+      }
+    ]
+  },
+  "habilidades": {
+    "tecnicas": {
+      "icono_seccion": "engranaje",
+      "items": [
+        { "tecnologia": "PHP", "experiencia": "5 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "MYSQL", "experiencia": "5 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "NODE.JS", "experiencia": "6 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "PYTHON", "experiencia": "3 Años", "indicador": "barra_de_progreso" },
+        { "tecnologia": "RUBY", "experiencia": "1 Año", "indicador": "barra_de_progreso" },
+        { "tecnologia": "C#", "experiencia": "3 Años", "indicador": "barra_de_progreso" }
+      ]
+    },
+    "blandas": {
+      "icono_seccion": "silueta_de_usuario",
+      "viñetas_de_lista": "marca_de_verificacion_naranja_(check)",
+      "items": [
+        "Resolución de problemas",
+        "Pensamiento lógico y analítico",
+        "Comunicación efectiva",
+        "Gestión del tiempo",
+        "Trabajo en equipo",
+        "Adaptabilidad y flexibilidad",
+        "Autodidacta y proactivo",
+        "Orientación al cliente"
+      ]
+    },
+    "otras_habilidades": {
+      "icono_seccion": "estrella",
+      "items": [
+        { "habilidad": "Control de versiones (Git / GitHub)", "icono": "nodos_de_ramificacion_(git)" },
+        { "habilidad": "Diseño responsivo (HTML, CSS, JS)", "icono": "monitor_y_telefono_movil" },
+        { "habilidad": "Bases de datos (SQL)", "icono": "discos_apilados_(cilindro)" },
+        { "habilidad": "APIs y servicios RESTful", "icono": "nodos_de_conexion_en_red" },
+        { "habilidad": "Despliegue en servidores (Linux)", "icono": "rack_de_servidor" },
+        { "habilidad": "Metodologías ágiles (Scrum / Kanban)", "icono": "cabeza_con_engranajes_o_ideas" },
+        { "habilidad": "Documentación técnica", "icono": "documento_de_texto" },
+        { "habilidad": "Herramientas de oficina (Word, Excel, Google Workspace)", "icono": "documento_con_tabla" }
+      ]
     }
-  ],
-  "idiomas": [
-    {
-      "idioma": "Inglés",
-      "nivel": "Intermedio" 
-    }
-  ],
-  "hobbies": [
-    "Videojuegos",
-    "Fotografía",
-    "Música"
-  ],
+  },
+  "formacion_academica": {
+    "icono_seccion": "birrete_de_graduacion",
+    "viñetas_de_lista": "punto_naranja",
+    "items": [
+      {
+        "institucion": "Escuela Secundaria",
+        "titulo": "Bachillerato"
+      }
+    ]
+  },
+  "idiomas": {
+    "icono_seccion": "globo_terraqueo",
+    "items": [
+      {
+        "idioma": "INGLES",
+        "indicador": "barra_de_progreso_por_bloques"
+      }
+    ]
+  },
+  "hobbies": {
+    "icono_seccion": "texto_naranja_sin_icono",
+    "items": [
+      { "nombre": "Videojuegos", "icono": "mando_de_consola" },
+      { "nombre": "Fotografía", "icono": "camara_fotografica" },
+      { "nombre": "Música", "icono": "nota_musical" }
+    ]
+  },
   "secciones_adicionales": {
-    "enfoque": "Comprometido con la calidad, la mejora continua y la entrega de soluciones efectivas.",
-    "mi_objetivo": "Sumarme a un equipo donde pueda aportar mis habilidades, seguir creciendo y enfrentar nuevos desafíos.",
-    "valor_agregado": "Versatilidad, ganas de aprender y capacidad de adaptarme a cualquier rol o proyecto."
+    "fondo": "panel_azul_oscuro",
+    "items": [
+      {
+        "titulo": "ENFOQUE",
+        "texto": "Comprometido con la calidad, la mejora continua y la entrega de soluciones efectivas.",
+        "icono": "diana_de_tiro_al_blanco_con_flecha"
+      },
+      {
+        "titulo": "MI OBJETIVO",
+        "texto": "Sumarme a un equipo donde pueda aportar mis habilidades, seguir creciendo y enfrentar nuevos desafíos.",
+        "icono": "portapapeles_con_diana_y_flecha"
+      },
+      {
+        "titulo": "VALOR AGREGADO",
+        "texto": "Versatilidad, ganas de aprender y capacidad de adaptarme a cualquier rol o proyecto.",
+        "icono": "medalla_con_estrella"
+      }
+    ]
   }
 }
