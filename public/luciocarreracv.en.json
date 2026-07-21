@@ -144,7 +144,8 @@
         { "habilidad": "Technical documentation", "icono": "documento_de_texto" },
         { "habilidad": "Office tools (Word, Excel, Google Workspace)", "icono": "documento_con_tabla" }
       ]
-    },
+    }
+  },
     "formacion_academica": {
     "icono_seccion": "birrete_de_graduacion",
     "viñetas_de_lista": "punto_naranja",
