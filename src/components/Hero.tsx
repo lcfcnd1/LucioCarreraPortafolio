@@ -2,6 +2,8 @@ import { ChevronDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -81,6 +83,9 @@ const Hero = () => {
           <p className="text-muted-foreground/70 mt-4 max-w-md animate-fade-up animation-delay-300">
             {t('hero.description')}
           </p>
+           <Button asChild variant="outline" className="mt-4 animate-fade-up animation-delay-400">
+                <Link to="/luciocarreracv">Ver CV</Link>
+            </Button>
         </div>
       </div>
       
@@ -95,5 +100,6 @@ const Hero = () => {
     </section>
   );
 };
+
 
 export default Hero;

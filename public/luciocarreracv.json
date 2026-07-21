@@ -1,0 +1,105 @@
+{
+  "informacion_personal": {
+    "nombre": "LUCIO CARRERA",
+    "titulo": "DESARROLLADOR MULTIPROPÓSITO",
+    "fecha_de_nacimiento": "30/10/1998",
+    "ubicacion": "Ciudad Capital, Santa Fe",
+    "disponibilidad": "Inmediata",
+    "modalidad_de_trabajo": ["Remoto", "Híbrido", "Presencial"],
+    "resumen": "Profesional con sólida formación en desarrollo web y amplia capacidad para adaptarme a distintos entornos y desafíos. Me destaco por mi compromiso, aprendizaje continuo, atención al detalle y enfoque en lograr resultados de calidad. Busco aportar valor en cualquier equipo, abordando problemas con creatividad, responsabilidad y orientación a soluciones."
+  },
+  "contacto": {
+    "celular": "+543426397163",
+    "whatsapp": "+543426397163",
+    "email": "lcfcndw@gmail.com"
+  },
+  "redes_sociales": {
+    "instagram": "lucio_is_me"
+  },
+  "perfil_personal": [
+    "Responsable y comprometido",
+    "Proactivo y resolutivo",
+    "Aprendizaje rápido",
+    "Trabajo en equipo",
+    "Buena comunicación",
+    "Organizado y detallista",
+    "Adaptable a nuevos desafíos",
+    "Orientado a resultados"
+  ],
+  "experiencia": [
+    {
+      "empresa": "Onus Sistemas",
+      "periodo": "2020 - 2022",
+      "puesto": "API Engineer",
+      "responsabilidades": [
+        "Desarrollo y mantenimiento de APIs RESTful para el sistema ERP de la empresa.",
+        "Integración con servicios de terceros y bases de datos SQL.",
+        "Optimización de consultas y rendimiento del backend.",
+        "Colaboración en el diseño de arquitectura escalable."
+      ]
+    },
+    {
+      "empresa": "Freelance",
+      "periodo": "2019 - 2020",
+      "puesto": "Fullstack",
+      "responsabilidades": [
+        "Desarrollo de aplicaciones web completas con Node.js, Express y MySQL.",
+        "Implementación de interfaces responsivas con HTML, CSS y JavaScript.",
+        "Automatización de tareas y procesos con scripts personalizados.",
+        "Gestión de proyectos, atención al cliente y despliegue en servidores."
+      ]
+    }
+  ],
+  "habilidades": {
+    "tecnicas": [
+      { "tecnologia": "PHP", "experiencia": "5 Años" },
+      { "tecnologia": "MYSQL", "experiencia": "5 Años" },
+      { "tecnologia": "NODE.JS", "experiencia": "6 Años" },
+      { "tecnologia": "PYTHON", "experiencia": "3 Años" },
+      { "tecnologia": "RUBY", "experiencia": "1 Año" },
+      { "tecnologia": "C#", "experiencia": "3 Años" }
+    ],
+    "blandas": [
+      "Resolución de problemas",
+      "Pensamiento lógico y analítico",
+      "Comunicación efectiva",
+      "Gestión del tiempo",
+      "Trabajo en equipo",
+      "Adaptabilidad y flexibilidad",
+      "Autodidacta y proactivo",
+      "Orientación al cliente"
+    ],
+    "otras_habilidades": [
+      "Control de versiones (Git / GitHub)",
+      "Diseño responsivo (HTML, CSS, JS)",
+      "Bases de datos (SQL)",
+      "APIs y servicios RESTful",
+      "Despliegue en servidores (Linux)",
+      "Metodologías ágiles (Scrum / Kanban)",
+      "Documentación técnica",
+      "Herramientas de oficina (Word, Excel, Google Workspace)"
+    ]
+  },
+  "formacion_academica": [
+    {
+      "institucion": "Escuela Secundaria",
+      "titulo": "Bachillerato"
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Inglés",
+      "nivel": "Intermedio" 
+    }
+  ],
+  "hobbies": [
+    "Videojuegos",
+    "Fotografía",
+    "Música"
+  ],
+  "secciones_adicionales": {
+    "enfoque": "Comprometido con la calidad, la mejora continua y la entrega de soluciones efectivas.",
+    "mi_objetivo": "Sumarme a un equipo donde pueda aportar mis habilidades, seguir creciendo y enfrentar nuevos desafíos.",
+    "valor_agregado": "Versatilidad, ganas de aprender y capacidad de adaptarme a cualquier rol o proyecto."
+  }
+}
