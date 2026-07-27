@@ -1,109 +1,25 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight, BarChart3, Bot, CalendarDays, Layers3, ShoppingBag, Sparkles, Users } from "lucide-react";
 
-const Projects = () => {
-  const { t } = useTranslation();
-  
-  const projects = [
-    {
-      key: "ecommerce",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=70&fm=webp",
-      demoUrl: "/demo/ecommerce",
-    },
-    {
-      key: "dashboard",
-      tags: ["TypeScript", "Next.js", "D3.js", "AWS"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=70&fm=webp",
-      demoUrl: "/demo/dashboard",
-    },
-    {
-      key: "management",
-      tags: ["React Native", "Firebase", "Redux", "Node.js"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=70&fm=webp",
-      demoUrl: "/demo/management",
-    },
-    {
-      key: "booking",
-      tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=70&fm=webp",
-      demoUrl: "/demo/booking",
-    },
-    {
-      key: "fintech",
-      tags: ["React", "GraphQL", "Python", "TensorFlow"],
-      image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&q=70&fm=webp",
-      demoUrl: "/demo/fintech",
-    },
-    {
-      key: "social",
-      tags: ["Angular", "NestJS", "Redis", "Docker"],
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=70&fm=webp",
-      demoUrl: "/demo/social",
-    },
-  ];
+const items=[
+  ["ecommerce","/demo/ecommerce",ShoppingBag,"#d2ff52","Commerce"],["dashboard","/demo/dashboard",BarChart3,"#8172ff","Analytics"],
+  ["management","/demo/management",Layers3,"#ff9456","Productivity"],["booking","/demo/booking",CalendarDays,"#d96b5d","Booking"],
+  ["automation","/demo/automation",Bot,"#a8ff56","AI Agents"],["social","/demo/social",Users,"#ff6452","Content"],
+] as const;
 
-  return (
-    <section id="projects" className="py-24 md:py-32 px-6 bg-secondary/30">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <span className="font-mono text-primary text-sm tracking-wider">// {t('projects.subtitle')}</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4">
-            {t('projects.heading')} <span className="text-gradient">{t('projects.headingHighlight')}</span>
-          </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            {t('projects.description')}
-          </p>
-        </div>
+const Preview=({type,accent}:{type:string;accent:string})=><div className={`work-preview wp-${type.toLowerCase()}`} style={{"--wa":accent} as React.CSSProperties}>
+  <header><i/><i/><i/><span/></header><aside><b/><b/><b/><b/></aside><main><h4/><p/><section><i/><i/><i/></section><div><i/><i/><i/><i/><i/><i/></div></main><em/>
+</div>;
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <article 
-              key={project.key}
-              className="glass-card overflow-hidden group flex flex-col hover:border-primary/30 transition-all duration-300"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={t(`projects.items.${project.key}.title`)}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
-              </div>
-              
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                  {t(`projects.items.${project.key}.title`)}
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-2 flex-1">
-                  {t(`projects.items.${project.key}.description`)}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map(tag => (
-                    <span 
-                      key={tag}
-                      className="px-3 py-1 text-xs font-mono bg-primary/10 text-primary rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                 <Button asChild variant="outline" className="mt-auto w-full">
-                    <Link to={project.demoUrl}>
-                        {t('projects.viewDemo', 'Ver demo')}
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                </Button>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-
-export default Projects;
+export default function Projects(){
+  const {t}=useTranslation();
+  return <section id="projects" className="work-section"><div className="work-wrap">
+    <header className="work-heading"><div><span><Sparkles size={14}/>{t("projects.subtitle")}</span><h2>{t("projects.heading")} <em>{t("projects.headingHighlight")}</em></h2></div><p>{t("projects.description")}</p></header>
+    <div className="work-grid">{items.map(([key,url,Icon,accent,type],i)=><Link to={url} className="work-card" key={key}>
+      <header><span>0{i+1}</span><b>Abrir demo <ArrowUpRight size={15}/></b></header><Preview type={type} accent={accent}/>
+      <section><i style={{background:accent}}><Icon size={18}/></i><div><h3>{t(`projects.items.${key}.title`)}</h3><p>{t(`projects.items.${key}.description`)}</p></div></section>
+      <footer><span>{type}</span><span>React</span><span>Responsive</span></footer>
+    </Link>)}</div>
+  </div></section>
+}

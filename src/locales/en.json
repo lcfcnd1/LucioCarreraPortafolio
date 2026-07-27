@@ -54,9 +54,9 @@
         "title": "Booking System",
         "description": "Online booking platform for restaurants with interactive calendar and real-time notifications."
       },
-      "fintech": {
-        "title": "Fintech App",
-        "description": "Financial application with expense tracking, smart budgets and investment analysis."
+      "automation": {
+        "title": "AI Automation Studio",
+        "description": "Visual platform to design agents, automate processes and monitor executions in real time."
       },
       "social": {
         "title": "Social Media Dashboard",

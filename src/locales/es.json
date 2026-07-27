@@ -54,9 +54,9 @@
         "title": "Sistema de Reservas",
         "description": "Plataforma de reservas online para restaurantes con calendario interactivo y notificaciones en tiempo real."
       },
-      "fintech": {
-        "title": "Fintech App",
-        "description": "Aplicación financiera con seguimiento de gastos, presupuestos inteligentes y análisis de inversiones."
+      "automation": {
+        "title": "AI Automation Studio",
+        "description": "Plataforma visual para diseñar agentes, automatizar procesos y monitorear ejecuciones en tiempo real."
       },
       "social": {
         "title": "Social Media Dashboard",

@@ -6,12 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CV from "./pages/CV";
-import EcommerceRoot from "./pages/demos/ecommerce/EcommerceRoot";
-import DashboardRoot from "./pages/demos/dashboard/DashboardRoot";
-import ManagementPage from "./pages/demos/management/ManagementPage";
-import BookingPage from "./pages/demos/booking/BookingPage";
-import FintechRoot from "./pages/demos/fintech/FintechRoot";
-import SocialRoot from "./pages/demos/social/SocialRoot";
+import { DemoExperience } from "./pages/demos/DemoExperience";
 
 const queryClient = new QueryClient();
 
@@ -24,12 +19,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/luciocarreracv" element={<CV />} />
-          <Route path="/demo/ecommerce/*" element={<EcommerceRoot />} />
-          <Route path="/demo/dashboard/*" element={<DashboardRoot />} />
-          <Route path="/demo/management" element={<ManagementPage />} />
-          <Route path="/demo/booking" element={<BookingPage />} />
-          <Route path="/demo/fintech/*" element={<FintechRoot />} />
-          <Route path="/demo/social/*" element={<SocialRoot />} />
+          <Route path="/demo/ecommerce/*" element={<DemoExperience kind="commerce" />} />
+          <Route path="/demo/dashboard/*" element={<DemoExperience kind="analytics" />} />
+          <Route path="/demo/management/*" element={<DemoExperience kind="management" />} />
+          <Route path="/demo/booking/*" element={<DemoExperience kind="booking" />} />
+          <Route path="/demo/automation/*" element={<DemoExperience kind="automation" />} />
+          <Route path="/demo/social/*" element={<DemoExperience kind="social" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
